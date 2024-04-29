@@ -1,0 +1,20 @@
+server:
+  # 服务端口
+  port: 8000
+spring:
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update #设置ddl模式
+  datasource:
+    platform: h2
+    url: jdbc:h2:./h2
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 123456
+
+  h2:
+    console:
+      enabled: true
+      path: /h2
